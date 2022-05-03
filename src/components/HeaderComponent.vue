@@ -25,31 +25,31 @@
                     {
                         nome: "Characters",
                     },
-                                        {
+                    {
                         nome: "Comics",
                     },
-                                        {
+                    {
                         nome: "Movies",
                     },
-                                        {
+                    {
                         nome: "Tv",
                     },
-                                        {
+                    {
                         nome: "Games",
                     },
-                                        {
+                    {
                         nome: "Collectibles",
                     },
-                                        {
+                    {
                         nome: "Videos",
                     },
-                                        {
+                    {
                         nome: "Fans",
                     },
-                                        {
+                    {
                         nome: "News",
                     },
-                                        {
+                    {
                         nome: "Shop",
                     },
                 ]
@@ -86,7 +86,7 @@
     }
 
     .list_item:hover {
-        border-bottom: 5px solid cornflowerblue;
+       border-bottom: 4px solid cornflowerblue;
     }
 
     .list_item:hover a {
@@ -95,7 +95,7 @@
 
     .list_item {
         padding-bottom: 2rem;
-        
+        border-bottom: 4px solid white; 
     }
     .list_item>a {
         text-decoration: none;
