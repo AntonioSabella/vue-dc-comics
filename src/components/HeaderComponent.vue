@@ -6,36 +6,10 @@
             </div>
             <div class="page_menu">
                 <ul class="link_list">
-                 <li class="list_item">
-                     <a href="#">Characters</a>
+                 <li class="list_item" v-for="(section, index) in navSections" :key="index">
+                     <a href="#">{{section.nome}}</a>
                  </li>
-                 <li class="list_item">
-                     <a href="#">Comics</a>
-                 </li>
-                 <li class="list_item">
-                     <a href="#">Movies</a>
-                 </li>
-                 <li class="list_item">
-                     <a href="#">Tv</a>
-                 </li>
-                 <li class="list_item">
-                     <a href="#">Games</a>
-                 </li>
-                 <li class="list_item">
-                     <a href="#">Collectibles</a>
-                 </li>
-                 <li class="list_item">
-                     <a href="#">Videos</a>
-                 </li>
-                 <li class="list_item">
-                     <a href="#">Fans</a>
-                 </li>
-                 <li class="list_item">
-                     <a href="#">News</a>
-                 </li>
-                 <li class="list_item">
-                     <a href="#">Shop</a>
-                 </li>
+                
                 </ul>
             </div>
         </div>
@@ -43,7 +17,45 @@
 </template>
 
 <script>
-
+    export default {
+        name: 'HeaderComponent',
+        data () {
+            return {
+                navSections: [
+                    {
+                        nome: "Characters",
+                    },
+                                        {
+                        nome: "Comics",
+                    },
+                                        {
+                        nome: "Movies",
+                    },
+                                        {
+                        nome: "Tv",
+                    },
+                                        {
+                        nome: "Games",
+                    },
+                                        {
+                        nome: "Collectibles",
+                    },
+                                        {
+                        nome: "Videos",
+                    },
+                                        {
+                        nome: "Fans",
+                    },
+                                        {
+                        nome: "News",
+                    },
+                                        {
+                        nome: "Shop",
+                    },
+                ]
+            }
+        }
+    }
 </script>
 
 <style lang="scss" scoped>
