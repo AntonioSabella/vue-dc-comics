@@ -86,16 +86,16 @@
     }
 
     .list_item:hover {
-       border-bottom: 4px solid cornflowerblue;
+       border-bottom: 5px solid rgb(58, 116, 223);
     }
 
     .list_item:hover a {
-        color: cornflowerblue;
+        color: rgb(58, 116, 223);
     }
 
     .list_item {
         padding-bottom: 2rem;
-        border-bottom: 4px solid white; 
+        border-bottom: 5px solid transparent; 
     }
     .list_item>a {
         text-decoration: none;

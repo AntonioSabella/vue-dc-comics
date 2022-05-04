@@ -17,8 +17,8 @@
     
         <div class="container_bottom">
             <div class="dc_actions">
-                <div class="dc_action" v-for="(action, index) in dcActions" :key="index">
-                    <img src="../assets/img/buy-comics-digital-comics.png">
+                <div class="dc_action" v-for="action in dcActions" :key="action.id">
+                    <img :src="action.image" :alt="action.feature">
                     <p>{{action.feature}}</p>
                 </div>
                
@@ -35,24 +35,29 @@ import ComicComponent from "@/components/ComicComponent.vue";
             return {
                 dcActions: [
                     {
-                        feature: "Digital Comics",
-                        image:"../assets/img/buy-comics-digital-comics.png",
+                       id: 1,
+                       feature: "Digital Comics",
+                       image: require("../assets/img/buy-comics-digital-comics.png"),
                     },
                     {
+                        id: 2,
                         feature: "DC Merchandise",
-                        image:"../assets/img/buy-comics-merchandise.png",
+                        image: require("../assets/img/buy-comics-merchandise.png"),
                     },
                     {
+                        id: 3,
                         feature: "Subscription",
-                        image:"../assets/img/buy-comics-subscriptions.png",
+                        image: require("../assets/img/buy-comics-subscriptions.png"),
                     },
                     {
+                        id: 4,
                         feature: "Comic Shop Locator",
-                        image:"../assets/img/buy-comics-shop-locator.png",
+                        image: require("../assets/img/buy-comics-shop-locator.png"),
                     },
                     {
+                        id: 5,
                         feature: "DC Power Visa",
-                        image:"../assets/img/buy-dc-power-visa.svg",
+                        image: require("../assets/img/buy-dc-power-visa.svg"),
                     },
                 ],
                 comics: [
@@ -154,8 +159,8 @@ import ComicComponent from "@/components/ComicComponent.vue";
             width: 150px;
             height: 50px;
             position: absolute;
-            bottom: -1rem;
-            left: 13rem;
+            bottom: -1.2rem;
+            left: 12rem;
             text-align: center;
             padding: 0.6rem 1rem;
             p {
